@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 50vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:70vh;
+    width: 50%;
+    z-index: 10;
+    background-color: #c9ada7;
+    transition: all ease-in-out 1s ;
+  }
+  .overlayDisappear{
+    transform: translateX(-1400px);
+  }
+  
+  .first_container {
+    display: flex;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+    color: #c9ada7;
+    background-color: #f8f8f8;
+    position: relative;
+    font-family: -apple-system, BlinkMacfSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .container_content {
+   width: 50%;
+  }
+  
+  .container_content_inner {
+    width: 80%;
+    margin-left: 80px;
+    background-color: #f8f8f8;
+  }
+  
+  .container_outer_img {
+    margin: 50px;
+    width: 50%;
+    overflow: hidden;
+  }   
+      
+  .container_img {
+    width: 100%;
+    animation: slideIn 1.5s ease-in-out forwards;
+  }
+  
+  .par {
+    height: auto;
+    overflow: hidden;
+  }
+  
+  p{
+    line-height: 28px;
+    transform: translateY(300px);
+    animation: slideUp .8s ease-in-out forwards .8s;
+  }
+  
+  .btns {
+    height: 100%;
+    position: relative;
+    width: 150px;
+    overflow: hidden;
+    outline: none;
+  }
+  
+  .btns_more {
+    background: transparent;
+    border: 1px solid #c9ada7;
+    border-radius: 50px;
+    padding: 8px 12px;
+    color: #c9ada7;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    outline: none;
+    transform: translateY(50px);
+    animation: slideUp .8s ease-in-out  forwards 1s;
+  }
+  
+  .title {
+    overflow: hidden;
+    height: auto;
+  }
+  
+  h1 {
+      font-size: 40px;
+      color:#c9ada7;
+      margin-bottom: 20px;
+      transform: translateY(300px);
+      animation: slideUp .8s ease forwards .5s;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
